@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .clearfix::after {
+            clear: both;
+            content: "";
+            height: 0;
+            visibility: hidden;
+            display: block;
+            /* overflow: hidden; */
+        }
+        .clearfix{
+            *zoom: 1;
+        }
+        li {
+            list-style: none;
+            text-align: center;
+            margin: 0 20px;
+        }
+        .box {
+            width: 600px;
+            height: 600px;
+        }
+        .tab-top {
+            background-color: skyblue;
+        }
+        .tab-top li {
+            width: 50px;
+            height: 50px;
+            background-color: #faf;
+            float: left;
+            cursor: pointer;
+        }
+        .tab-bottom {
+            background-color: pink;
+        }
+        .tab-bottom li {
+            display: none;
+            height: 100px;
+            background-color: burlywood;
+        }
+        .tab-top .active {
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <ul class="tab-top clearfix">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+        <ul class="tab-bottom">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+    </div>
+    <script src="./js/common.js"></script>
+    <script>
+        app.tab(
+            {
+                top : ".tab-top",
+                bottom : ".tab-bottom",
+                active : "active",
+                callback : function(){},
+            }
+        )
+    </script>
+</body>
+
+</html>

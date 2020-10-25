@@ -1,0 +1,145 @@
+/* 设计稿宽 750 */
+@rem: 7.5rem;
+body,
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+}
+
+/* 表单提示文字颜色 */
+::-webkit-input-placeholder {
+    // color: #ee9918;
+}
+
+/* 大盒子公共样式 */
+.pg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* 定位居中 */
+.center(@w, @h) {
+    //居中
+    margin-left: -@w/2;
+    margin-top: -@h/2;
+}
+
+//less 定位函数
+.lt(@w: 'auto', @h: 1500px, @l: 0, @t: 0) {
+    //左上定位
+    width: @w;
+    height: @h;
+    position: absolute;
+    left: @l;
+    top: @t;
+}
+
+.ps {
+    position: absolute;
+}
+
+.dn {
+    display: none;
+}
+
+img {
+    height: auto;
+    width: 100%;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input,
+select {
+    outline: none;
+    background: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+li {
+    list-style: none;
+}
+
+div {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+img[src=""] {
+    display: none;
+}
+
+//调用方法可看这个
+.inner-box {
+    .lt(750/@rem, 1500/@rem, 0, 50%);
+    .center(0, 1500/@rem)
+}
+
+.w{
+    max-width: 750/@rem;
+}
+/* ********************************************** 自定义样式开始 *******************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 高度小于 680
+@media screen and (max-height:181.33vw) {
+
+}
+
+// 高度小于 600
+@media screen and (max-height:160vw) {
+
+}
+
+
+// 高度小于 550
+@media screen and (max-height:148vw) {
+
+}
